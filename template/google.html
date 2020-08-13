@@ -1,0 +1,258 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>No 1 digital Marketing Agency | DigiFluent</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="/">Digi<span>Fluent</span></a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="/" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="services" class="nav-link"><span>Services</span></a></li>
+            <li class="nav-item"><a href="single" class="nav-link"><span>Blog</span></a></li>
+	          <li class="nav-item"><a href="contact" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  
+	  <section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/blog.png' %});" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate pb-5 text-center">
+            <p>GOOGLE ADVERTISEMENTS </p>
+            <h1 class="mb-4 mt-3">Google Ads is your one stop to land traffic and gain revenue simultaneously.
+            
+            <p><a href="contact" class="btn btn-primary px-5 py-3 mt-3">Get in touch</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+		
+    
+    <section class="ftco-counter" id="section-counter">
+    	<div class="container-fluid">
+    		<div class="row d-flex">
+    			<div class="col-md-6 d-flex">
+            {% for googles in googless %}
+    				<div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url({{googles.img1.url}} );">
+    					<a href="" class="icon icon-video popup-vimeo d-flex justify-content-center align-items-center">
+    						<span class="zmdi zmdi-play"></span>
+    					</a>
+    				</div>
+    			</div>
+    			<div class="col-md-6 px-5 py-5">
+    				<div class="row justify-content-start pt-3 pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<span class="subheading"> Facts</span>
+		            <h2 class="mb-4">Marketing Agency with Difference</h2>
+		            <p> {{ googles.para1 }}</p>
+		          </div>
+            </div>
+           
+            <span class="subheading"> OUR PLAN OF ACTION! </span>
+
+
+		    		<div class="row">
+
+		          <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center py-4 bg-light mb-4">
+		              <div class="text">
+		              	<div class="icon d-flex justify-content-center align-items-center">
+		              	</div>
+		                <strong> STEP-I </strong>
+		                <span> Detect Problem </span>
+		              </div>
+		            </div>
+              </div>
+              
+		          <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center py-4 bg-light mb-4">
+		              <div class="text">
+		              	<div class="icon d-flex justify-content-center align-items-center">
+		              	</div>
+		                <strong> STEP-II </strong>
+		                <span> Split the problem </span>
+		              </div>
+		            </div>
+              </div>
+              
+		          <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center py-4 bg-light mb-4">
+		              <div class="text">
+		              	<div class="icon d-flex justify-content-center align-items-center">
+		              	</div>
+		                <strong> STEP-III </strong>
+		                <span> Analyze the problem </span>
+		              </div>
+		            </div>
+              </div>
+              
+		          <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center py-4 bg-light mb-4">
+		              <div class="text">
+		              	<div class="icon d-flex justify-content-center align-items-center">
+		              	</div>
+		                <strong> STEP-IV </strong>
+		                <span> Final Result</span>
+		              </div>
+		            </div>
+              </div>
+              
+		          </div>
+		        </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+
+    <section class="ftco-counter" id="section-counter">
+    	<div class="container-fluid">
+    		<div class="row d-flex">
+
+          <div class="col-md-6 px-5 py-5">
+    				<div class="row justify-content-start pt-3 pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<span class="subheading"> MOTIVE </span>
+		            <h2 class="mb-4"> plan of action for you</h2>
+		            <ul class="a">
+                  <li>{{ googles.sol1 }}</li>
+                  <li>{{ googles.sol2 }}</li>
+                  <li>{{ googles.sol3 }}</li>
+                  <li>{{ googles.sol4 }}</li>
+                </ul>
+		          </div>
+            </div>
+            </div>
+
+            <div class="col-md-6 d-flex">
+              
+              <div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url({{googles.img2.url}} );">
+               
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+        {% endfor %}
+
+    
+     <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About DigiFluent</h2>
+              <p>We help your business climb the ladder of online success.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="index"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="services"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+                <li><a href="single"><span class="icon-long-arrow-right mr-2"></span>Blog</a></li>
+                <li><a href="contact"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="socialmediamarketing"><span class="icon-long-arrow-right mr-2"></span>Social Media Marketing</a></li>
+                <li><a href="facebook"><span class="icon-long-arrow-right mr-2"></span>Facebooks Ads</a></li>
+                <li><a href="google"><span class="icon-long-arrow-right mr-2"></span>Google Ads</a></li>
+                <li><a href="influencer"><span class="icon-long-arrow-right mr-2"></span>Influencer Marketing</a></li>
+                <li><a href="seo"><span class="icon-long-arrow-right mr-2"></span>Search Engine Optimization</a></li>
+                <li><a href="sem"><span class="icon-long-arrow-right mr-2"></span>Search Media Optimization</a></li>
+                <li><a href="content"><span class="icon-long-arrow-right mr-2"></span>Content Marketing</a></li>
+                <li><a href="branding"><span class="icon-long-arrow-right mr-2"></span>Branding Strategies</a></li>
+                <li><a href="graphic"><span class="icon-long-arrow-right mr-2"></span>Graphic Designing</a></li>
+                <li><a href="webdesigning"><span class="icon-long-arrow-right mr-2"></span>Web Designing</a></li>
+                <li><a href="email"><span class="icon-long-arrow-right mr-2"></span>Email Marketing</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                
+	                <li><a href="contact"><span class="icon icon-phone"></span><span class="text">8319621474, 7065183962</span></a></li>
+	                <li><a href="contact"><span class="icon icon-envelope"></span><span class="text">contact@digifluentagency.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </footer>
+    
+
+         
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/aos.js' %}"></script>
+  <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'js/scrollax.min.js' %}"></script>
+  <script src="{% static 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false' %}"></script>
+  <script src="{% static 'js/google-map.js' %}"></script>
+  
+  <script src="{% static 'js/main.js' %}"></script>
+    
+  </body>
+</html>
